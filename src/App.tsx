@@ -1,13 +1,13 @@
 import React, {Fragment, useState} from 'react';
 import './App.css';
 import Profile from "./Profile";
+import {Counter} from "./Counter";
 
 type Authenticated = {
   name: string
 }
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
   const [isLoggedIn, setIsLoggedIn] = useState<Authenticated | undefined>(undefined);
 
   const [username, setUsername] = useState<string>();
@@ -47,9 +47,7 @@ const App = () => {
         }
       </header>
       <section className="App-section">
-        <button onClick={() => setCounter(counter + 1)} data-automation-id='Button-Increment'>Increment</button>
-        <button onClick={() => { throw new Error('Bad Kitty') }} data-automation-id='Button-Decrement'>Decrement</button>
-        <h1 data-automation-id='Counter'>{counter}</h1>
+        <Counter />
       </section>
     </div>
   );
