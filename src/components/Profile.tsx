@@ -1,6 +1,5 @@
 import React, {FunctionComponent, useState} from 'react';
 import ProfileImage from './profile.gif';
-import './App.css';
 import styled from "styled-components";
 
 type ProfileProps = {
@@ -49,7 +48,7 @@ const Profile: FunctionComponent<ProfileProps> = ({name}) => {
     <StyledProfile>
       <div>
         <small>Welcome</small>
-        <h1>{name}</h1>
+        <h1 data-automation-id='Profile-Username'>{name}</h1>
         <Image/>
       </div>
       <button onClick={() => setCats(myCats)}>Show Cats</button>

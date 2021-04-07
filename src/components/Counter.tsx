@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {calculateNextNumber, calculatePreviousNumber} from "../helpers";
 
-export const Counter = () => {
+const Counter = () => {
   const [counter, setCounter] = useState(0);
 
   const handleIncrement = () => setCounter(calculateNextNumber(counter))
@@ -13,3 +13,5 @@ export const Counter = () => {
     <h1 data-automation-id='Counter'>{counter}</h1>
   </>;
 }
+
+export default Counter;
