@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {calculateNextNumber, calculatePreviousNumber} from "./helpers";
+import {calculateNextNumber, calculatePreviousNumber} from "../helpers";
 
 export const Counter = () => {
   const [counter, setCounter] = useState(0);

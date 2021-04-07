@@ -1,7 +1,7 @@
 import React from 'react';
 import { configure, render, RenderResult } from '@testing-library/react';
 import { defineFeature, loadFeature } from 'jest-cucumber';
-import { Counter } from "../../Counter";
+import { Counter } from "../../components/Counter";
 
 const feature = loadFeature('src/features/counter.feature', {
   tagFilter: 'not @skip'

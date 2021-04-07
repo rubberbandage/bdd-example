@@ -3,14 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^14.14.37",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.0",
-    "jest-cucumber": "^3.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -48,12 +40,20 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.9",
     "@cucumber/cucumber": "^7.0.0",
     "@cypress/browserify-preprocessor": "^3.0.1",
     "@testing-library/cypress": "^7.0.5",
-    "@types/styled-components": "^5.1.9",
     "cypress": "^7.0.0",
-    "cypress-cucumber-preprocessor": "^4.0.3"
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "jest-cucumber": "^3.0.1"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true

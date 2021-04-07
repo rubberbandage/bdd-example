@@ -1,12 +1,11 @@
 ## BDD
 
-Tools:\
-[jest-cucumber](https://www.npmjs.com/package/jest-cucumber)
-
-[cypress](https://www.npmjs.com/package/cypress)
+### Tools
+* [jest-cucumber](https://www.npmjs.com/package/jest-cucumber)
+* [cypress](https://www.npmjs.com/package/cypress)
 
 ### For cucumber/gherkin syntax
-[cypress-cucumber-preprocessor](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
+* [cypress-cucumber-preprocessor](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
 
 
 
