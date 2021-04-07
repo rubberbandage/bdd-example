@@ -15,7 +15,7 @@ defineFeature(feature, test => {
 
   test('Increments counter by 1', ({given, when, then}) => {
     given('component has mounted', () => {
-      component = render(<Counter />)
+      component = render(<Counter />);
     });
 
     when('clicking increment button', async () => {

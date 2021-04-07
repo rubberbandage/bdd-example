@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:3117",
+  "baseUrl": "http://localhost:3000",
   "testFiles": "**/*.feature",
   "downloadsFolder": "cypress/downloads",
   "fixturesFolder": "cypress/fixtures",
