@@ -1,11 +1,13 @@
 import React, {useState} from "react";
-import {calculateNextNumber, calculatePreviousNumber} from "../helpers";
 
-const Counter = () => {
-  const [counter, setCounter] = useState(0);
+type CounterProps = {
+  initialValue?: number
+}
+const Counter = ({ initialValue = 0 }: CounterProps) => {
+  const [counter, setCounter] = useState(initialValue);
 
-  const handleIncrement = () => setCounter(calculateNextNumber(counter))
-  const handleDecrement = () => setCounter(calculatePreviousNumber(counter))
+  const handleIncrement = () => setCounter(counter + 1)
+  const handleDecrement = () => setCounter(counter - (counter ^ 2) + 1)
 
   return <>
     <button onClick={handleIncrement} data-automation-id='Button-Increment'>Increment</button>
