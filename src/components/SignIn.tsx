@@ -19,13 +19,17 @@ const SignIn = ({ setIsLoggedIn }: SignInProps) => {
   }
 
   return <Fragment>
+    <label htmlFor="username">Username</label>
     <input
+      id="username"
       data-automation-id='Login-Username'
       onInput={(event: React.FormEvent<HTMLInputElement>) => {
         setUsername((event.target as HTMLInputElement).value);
       }}
     />
+    <label htmlFor="password">Password</label>
     <input
+      id="password"
       data-automation-id='Login-Password'
       type='password'
       onInput={(event: React.FormEvent<HTMLInputElement>) => {

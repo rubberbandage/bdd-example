@@ -31,6 +31,10 @@ When(/^I have logged in with "(.*)" and "(.*)"$/, (username, password) => {
   cy.login(username, password)
 });
 
+When(/^I type "([^"]*)" into the "([^"]*)" field$/, (text, label) => {
+  cy.findByLabelText(label).type(text);
+});
+
 // THEN
 Then(/^I see the number (\d+)$/, (number) => {
   cy.findByText(number).should('exist');

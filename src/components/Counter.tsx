@@ -7,7 +7,7 @@ const Counter = ({ initialValue = 0 }: CounterProps) => {
   const [counter, setCounter] = useState(initialValue);
 
   const handleIncrement = () => setCounter(counter + 1)
-  const handleDecrement = () => setCounter(counter - (counter ^ 2) + 1)
+  const handleDecrement = () => setCounter(counter - 1)
 
   return <>
     <button onClick={handleIncrement} data-automation-id='Button-Increment'>Increment</button>

@@ -6,6 +6,7 @@ Feature: Counter
     When I click increment
     Then counter shows 1
 
+#  @skip
   Scenario Outline: Decrements counter by 1
     Given component has mounted with <initial>
     When I click decrement
