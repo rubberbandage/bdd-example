@@ -8,6 +8,9 @@
 * [cypress-cucumber-preprocessor](https://www.npmjs.com/package/cypress-cucumber-preprocessor)
 
 
+### Extensions
+* [Cypress Testing Library](https://testing-library.com/docs/cypress-testing-library/intro/)
+* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 ## Scripts
 
